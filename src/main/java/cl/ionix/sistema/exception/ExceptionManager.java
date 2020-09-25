@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
+/**
+ *  Manejo de expciones personalizadas para emitir distintas respuestas del controller
+ */
 @Log4j2
 @ControllerAdvice
 @Order(Ordered.LOWEST_PRECEDENCE)

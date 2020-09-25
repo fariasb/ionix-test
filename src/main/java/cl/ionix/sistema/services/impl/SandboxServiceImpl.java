@@ -16,6 +16,7 @@ import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+
 @Log4j2
 @Service
 public class SandboxServiceImpl implements SandboxService {
@@ -30,7 +31,11 @@ public class SandboxServiceImpl implements SandboxService {
     @Autowired
     private CifradoUtil cifradoUtil;
 
-
+    /**
+     *
+     * @param param: dato enviado al servicio
+     * @return ResponseTO : obtjeto de transferncia con la salida
+     */
     @Override
     public ResponseTO buscarPorParam(String param) {
 

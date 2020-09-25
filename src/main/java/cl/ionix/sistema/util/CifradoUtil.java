@@ -16,7 +16,18 @@ public class CifradoUtil {
 
     public static final String ALGORITMO_CIFRADO = "DES";
 
-
+    /**
+     *  Permite el cifrado de un texto con algoritmo DES
+     * @param data: dato a cifrar
+     * @param key: llave utilizada para el cifrado
+     * @return
+     * @throws NoSuchPaddingException
+     * @throws NoSuchAlgorithmException
+     * @throws InvalidKeyException
+     * @throws BadPaddingException
+     * @throws IllegalBlockSizeException
+     * @throws InvalidKeySpecException
+     */
     public String cifrar(String data, String key) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException,  BadPaddingException, IllegalBlockSizeException, InvalidKeySpecException {
 
 

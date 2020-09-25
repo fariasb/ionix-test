@@ -54,6 +54,9 @@ campo “elapsedTime” se debe entregar el tiempo de ejecución del servicio
 #### Levantar aplicación (por defecto puerto 8080)
  `mvn spring-boot:run`
  
+#### El serivicio incluye actuator para obtención de metricas
+`http://localhost:8080/actuator`
+ 
 #### Llamadas de prueba
 - Servicio que crea usuario
 

@@ -18,6 +18,11 @@ public class UsuarioServicesImpl implements UsuarioServices {
     @Autowired
     private UsuarioRepository usuarioRepository;
 
+    /**
+     * Permite la creación de un usuario en base de datos
+     * @param userTO
+     * @return ResponseTO : obtjeto de transferncia con la salida, contiene el id del usuario creado
+     */
     @Override
     public ResponseTO creaUsuario(UserTO userTO) {
 
@@ -38,6 +43,10 @@ public class UsuarioServicesImpl implements UsuarioServices {
 
     }
 
+    /**
+     * Método que busca todos los usuarios registrados
+     * @return ResponseTO : obtjeto de transferncia con la salida, contiene la lista de lo usuarios encontrados
+     */
     @Override
     public ResponseTO getUsuarios() {
 
@@ -67,6 +76,11 @@ public class UsuarioServicesImpl implements UsuarioServices {
                 .build();
     }
 
+    /**
+     * Método que busca un usuario en base de datos por su email
+     * @param email
+     * @return ResponseTO : obtjeto de transferncia con la salida, contiene al usuario encontrado
+     */
     @Override
     public ResponseTO getUsuarioPorEmail(String email) {
 

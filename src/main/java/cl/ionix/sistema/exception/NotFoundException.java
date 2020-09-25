@@ -2,6 +2,9 @@ package cl.ionix.sistema.exception;
 
 import lombok.Getter;
 
+/**
+ *  Excpeción personalizada para identificar cuando una consulta no encuentra resultados
+ */
 @Getter
 public class NotFoundException extends RuntimeException{
 
