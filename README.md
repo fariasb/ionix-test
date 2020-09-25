@@ -35,11 +35,11 @@ campo “elapsedTime” se debe entregar el tiempo de ejecución del servicio
 
 ```json
 {
-    "responseCode": 0
+    "responseCode": 0,
     "description": "OK",
     "elapsedTime": 245,
     "result": {
-      "registerCount": NN
+      "registerCount": 11
     }
 }
 ```
