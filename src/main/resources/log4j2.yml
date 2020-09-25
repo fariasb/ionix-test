@@ -1,0 +1,14 @@
+Configuration:
+  status: info
+
+  appenders:
+    Console:
+      name: LogToConsole
+      PatternLayout:
+          pattern: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5level] %msg%n"
+
+  Loggers:
+    Root:
+      level: debug
+      AppenderRef:
+         - ref: LogToConsole
